@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:editable="false"
+        android:inputType="text" />
+
+    <Button
+        android:text="Explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bExplore"
+        android:layout_alignBaseline="@+id/bHome"
+        android:layout_alignBottom="@+id/bHome"
+        android:layout_toRightOf="@+id/bHome"
+        android:layout_toEndOf="@+id/bHome"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+
+    <Button
+        android:text="News"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bNews"
+        android:layout_alignBaseline="@+id/bExplore"
+        android:layout_alignBottom="@+id/bExplore"
+        android:layout_toRightOf="@+id/bExplore"
+        android:layout_toEndOf="@+id/bExplore"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+
+    <Button
+        android:text="Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bNews"
+        android:layout_toRightOf="@+id/bNews"
+        android:layout_toEndOf="@+id/bNews"
+        android:id="@+id/bProfile"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+
+    <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bHome"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="UnknownId"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="98dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/etUsername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:text="Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvProfile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+</RelativeLayout>
